@@ -27,7 +27,7 @@
 <body>
   <main class="wrap">
     <h1>Three home pages</h1>
-    <p class="intro">Full home pages for Sensoria, written from the current website and reorganised as one story: the inner frontier, the problem, how the work runs, proof from the field, data sovereignty, why now, the open research, three ways in, and the team. Two build on round 7 (Collection, Illustrated), one on the round 4 collage-and-sticker direction, and one (Journey) rebuilds the techniques demo as the home page.</p>
+    <p class="intro">Full home pages for Sensoria, written from the current website and reorganised as one story: the inner frontier, the problem, how the work runs, proof from the field, data sovereignty, why now, the open research, three ways in, and the team. Two build on round 7 (Collection, Illustrated), one on the round 4 collage-and-sticker direction, one (Journey) rebuilds the techniques demo as the home page, and one (Clean) uses familiar patterns from clean, minimal sites.</p>
     <div class="grid" id="grid"></div>
   </main>
   <script>window.DIRECTIONS = [];</script>
@@ -38,6 +38,7 @@
   <script src="directions/illustrated.js"></script>
   <script src="directions/playful.js"></script>
   <script src="directions/journey.js"></script>
+  <script src="directions/clean.js"></script>
   <script>
     document.getElementById('grid').innerHTML = window.LAYOUTS.map((d, i) => `
       <a class="card" href="page.html?d=${d.id}"><b>8${String.fromCharCode(65 + i)}</b><h2>${d.name}</h2><p>${d.idea}</p></a>`).join('');
