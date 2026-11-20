@@ -9,7 +9,7 @@
   window.LAYOUTS.push({
     id: 'collection',
     name: 'Collection',
-    idea: 'From 7B. The home page as a well-kept catalogue: instruments and figures on numbered plates, photos as captioned plates, each section an entry. Hover lifts an object off its plate. One teal surface, the field record.',
+    idea: 'Calm and orderly, like a museum catalogue. Instruments and figures sit on numbered plates, photos carry captions, and each section reads like an entry. Small motion: objects drift and lift on hover, photos warm from duotone to colour.',
     css: `
       .co-hero { display: grid; grid-template-columns: 6fr 6fr; gap: 64px; align-items: center; padding-top: 48px; }
       .co-cab { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }

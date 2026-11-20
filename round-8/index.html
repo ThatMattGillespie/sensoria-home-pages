@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>Sensoria round 8</title>
+  <title>Sensoria home page options</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Funnel+Sans:wght@300..800&family=Fragment+Mono&display=swap">
   <style>
     :root { --ground: #F2ECE2; --ink: #05272B; --ink-2: #4C6466; }
@@ -26,8 +26,9 @@
 </head>
 <body>
   <main class="wrap">
-    <h1>Three home pages</h1>
-    <p class="intro">Full home pages for Sensoria, written from the current website and reorganised as one story: the inner frontier, the problem, how the work runs, proof from the field, data sovereignty, why now, the open research, three ways in, and the team. Two build on round 7 (Collection, Illustrated), one on the round 4 collage-and-sticker direction, one (Journey) rebuilds the techniques demo as the home page, and one (Clean) uses familiar patterns from clean, minimal sites.</p>
+    <h1>Five home pages for Sensoria</h1>
+    <p class="intro">Five ways the Sensoria home page could look, all telling the same story in the same words: the inner frontier, the problem, how the work runs, proof from the field, privacy, why now, the open research, ways in, and the team. The copy comes from the current website, reorganised; it is a draft.</p>
+    <p class="intro"><b style="color:var(--ink);font-weight:500">Giving feedback:</b> pink labels mark each section, such as A-3 for option A, section 3, and A-3B for a part inside it. Quote the label so we know exactly where you mean. Press L or the Labels button to hide them. On a phone the pages simplify, so a laptop is best.</p>
     <div class="grid" id="grid"></div>
   </main>
   <script>window.DIRECTIONS = [];</script>
@@ -41,7 +42,7 @@
   <script src="directions/clean.js"></script>
   <script>
     document.getElementById('grid').innerHTML = window.LAYOUTS.map((d, i) => `
-      <a class="card" href="page.html?d=${d.id}"><b>8${String.fromCharCode(65 + i)}</b><h2>${d.name}</h2><p>${d.idea}</p></a>`).join('');
+      <a class="card" href="page.html?d=${d.id}"><b>Option ${String.fromCharCode(65 + i)}</b><h2>${d.name}</h2><p>${d.idea}</p></a>`).join('');
   </script>
 </body>
 </html>

@@ -20,7 +20,7 @@
   window.LAYOUTS.push({
     id: 'clean',
     name: 'Clean',
-    idea: 'The most conventional option, in Sensoria’s fonts and colours: centred hero with one wide image, a proof bar, tabs for how it works, a feature grid with line icons, a FAQ and a call-to-action band. Motion stays small: reveals, count-ups, a tucking header, tabs that advance on their own, a smooth accordion.',
+    idea: 'The most conventional option, in Sensoria’s fonts and colours: a centred hero with one wide photo, a row of key numbers, tabs for how it works, feature cards with line icons, a FAQ and a closing call to action. Motion stays small and quiet.',
     css: `
       .cl-hero { text-align: center; padding-top: 72px; }
       .cl-pill { display: inline-flex; align-items: center; gap: 10px; padding: 6px 8px 6px 14px; border-radius: 99px; background: ${C.WHITE}; font: 500 14px var(--font-text); text-decoration: none; color: var(--ink);

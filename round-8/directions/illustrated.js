@@ -7,7 +7,7 @@
   window.LAYOUTS.push({
     id: 'illustrated',
     name: 'Illustrated',
-    idea: 'From 7C. Sensoria’s ligne claire scenes carry the ideas; real photographs carry the proof. Wide scenes open the chapters and the text stays quiet around them. One teal surface, the sovereignty promise.',
+    idea: 'Sensoria’s own ligne claire illustrations explain the ideas and real event photos prove them. Wide scenes open each chapter and drift gently as you scroll, and the text stays quiet around them.',
     css: `
       .il-hero { padding: 64px 40px 56px; display: grid; grid-template-columns: 7fr 5fr; gap: 64px; align-items: end; }
       .il-hero .lead { margin-top: 0; }

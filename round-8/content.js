@@ -207,14 +207,14 @@
     Object.entries(D.tokens).forEach(([k, v]) => root.style.setProperty(k, v));
     const st = document.createElement('style'); st.textContent = D.css + SHARED + (L.css || ''); document.head.appendChild(st);
     document.getElementById('defs').innerHTML = R.printKit.defs;
-    document.title = `${L.name} · Sensoria round 8`;
+    document.title = `${L.name} · Sensoria home page options`;
     root.dataset.layout = L.id;
-    const code = `8${String.fromCharCode(65 + idx)}`;
+    const code = String.fromCharCode(65 + idx); // review labels read A-3B: option A, section 3, part B
     document.getElementById('app').innerHTML = `
-      <nav class="toolbar" aria-label="Exploration"><a class="tb-title" href="index.html">Sensoria · Round 8</a>
-        ${list.map((d, i) => `<a class="tb-dir" href="?d=${d.id}"${i === idx ? ' aria-current="page"' : ''}>${i + 1} ${d.name}</a>`).join('')}
+      <nav class="toolbar" aria-label="Exploration"><a class="tb-title" href="index.html">Sensoria · Home page options</a>
+        ${list.map((d, i) => `<a class="tb-dir" href="?d=${d.id}"${i === idx ? ' aria-current="page"' : ''}>${String.fromCharCode(65 + i)} · ${d.name}</a>`).join('')}
         <span class="tb-spacer"></span></nav>
-      <div class="r5-intro"><b>${code} · ${L.name}</b><span>${L.idea}</span></div>
+      <div class="r5-intro"><b>Option ${code} · ${L.name}</b><span>${L.idea}</span></div>
       ${L.render(W, R)}`;
     document.querySelectorAll('[data-bt]').forEach((el) => {
       const html = el.innerHTML;

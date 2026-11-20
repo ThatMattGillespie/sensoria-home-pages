@@ -11,7 +11,7 @@
   window.LAYOUTS.push({
     id: 'journey',
     name: 'Journey',
-    idea: 'The techniques demo rebuilt as the home page. Scroll through the hero collage, watch the problem build word by word, travel sideways through the cycle and the field, stack the three promises, let the forces drift past, and pick a way in on a split screen. Phones and reduced motion get a flat version.',
+    idea: 'Storytelling driven by the scroll. The hero collage pulls apart as you scroll, the problem builds word by word, the method and the events travel sideways, the privacy promises stack like sheets, and a sticker table invites you to play. Phones get a simpler version.',
     render: (W) => {
       const panels = [
         ...W.loop.steps.map(([v, t, d], i) => ({ n: `0${i + 1}`, h: v, sub: t, p: d, im: ['il-dome.jpg', 'il-capture.jpg', 'il-community-map.jpg'][i], tone: '' })),

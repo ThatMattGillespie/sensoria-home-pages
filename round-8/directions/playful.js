@@ -8,7 +8,7 @@
   window.LAYOUTS.push({
     id: 'playful',
     name: 'Playful',
-    idea: 'The round 4 / final direction as a full home page. A parallax collage of prints and cut-outs, an object in the headline, one sticker per section beside the idea it stands for, Jeremy peeking over the field section, and pinned prints of real events. Stickers lift on hover.',
+    idea: 'Collage and stickers lead. A hero collage that moves with the cursor, an object set into the headline, one sticker beside each idea, a team member peeking over the events section, and pinned prints of real gatherings. Stickers lift on hover.',
     css: `
       .pf-hero { display: grid; grid-template-columns: 6fr 6fr; gap: 48px; align-items: center; padding: 32px 40px 0; }
       .pf-stage { position: relative; aspect-ratio: 4 / 5; }
