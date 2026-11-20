@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Sensoria round 8</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Funnel+Sans:wght@300..800&family=Fragment+Mono&display=swap">
+  <style>
+    :root { --ground: #F2ECE2; --ink: #05272B; --ink-2: #4C6466; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { background: var(--ground); color: var(--ink); }
+    body { font: 17px/1.5 'Funnel Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 72px 48px 120px; }
+    h1 { font: 400 clamp(48px, 7vw, 96px)/.95 'Funnel Display', system-ui, sans-serif; letter-spacing: -.04em; max-width: 13ch; }
+    .intro { max-width: 60ch; color: var(--ink-2); margin-top: 28px; font-size: 19px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 64px; }
+    .card { display: grid; gap: 10px; padding: 32px; border-radius: 18px; background: #FEFEFE; text-decoration: none; color: inherit; transition: transform .2s; }
+    .card:hover { transform: translateY(-3px); }
+    .card:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+    .card b { font: 400 13px 'Fragment Mono', monospace; color: var(--ink-2); }
+    .card h2 { font: 400 36px/1 'Funnel Display', system-ui, sans-serif; letter-spacing: -.03em; }
+    .card p { color: var(--ink-2); }
+    @media (max-width: 760px) { .wrap { padding: 40px 16px 64px; } .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Three home pages</h1>
+    <p class="intro">Full home pages for Sensoria, written from the current website and reorganised as one story: the inner frontier, the problem, how the work runs, proof from the field, data sovereignty, why now, the open research, three ways in, and the team. Two build on round 7 (Collection, Illustrated), one on the round 4 collage-and-sticker direction, and one (Journey) rebuilds the techniques demo as the home page.</p>
+    <div class="grid" id="grid"></div>
+  </main>
+  <script>window.DIRECTIONS = [];</script>
+  <script src="../round-5/directions/base.js"></script>
+  <script src="../round-5/directions/kit.js"></script>
+  <script src="content.js"></script>
+  <script src="directions/collection.js"></script>
+  <script src="directions/illustrated.js"></script>
+  <script src="directions/playful.js"></script>
+  <script src="directions/journey.js"></script>
+  <script>
+    document.getElementById('grid').innerHTML = window.LAYOUTS.map((d, i) => `
+      <a class="card" href="page.html?d=${d.id}"><b>8${String.fromCharCode(65 + i)}</b><h2>${d.name}</h2><p>${d.idea}</p></a>`).join('');
+  </script>
+</body>
+</html>
